@@ -1,0 +1,157 @@
+/* Q1 */
+.size{
+    width:  400px;
+    height: 400px;
+    background: #f00;
+    margin: 0 auto;
+}
+@media screen and (max-width: 960px) {
+    .size{
+        width: 200px;
+        height: 200px;
+    }
+}
+/* Q2 */
+.color{
+    width:  300px;
+    height: 300px;
+    background: #f00;
+    margin: 0 auto;
+}
+@media screen and (max-width: 960px) {
+    .color{
+        width: 300px;
+        height: 300px;
+        background-color: #007bff;
+    }
+}
+/* Q3 */
+.container_margin{
+    display: flex;
+    justify-content: center;
+}
+.container_margin > div{
+    width: 300px;
+    height: 300px;
+}
+.margin_1{
+    background: #0008ff;
+}
+.margin_2{
+    background: #2f0;
+    margin-left: 150px;
+}
+@media screen and (max-width: 960px){
+    .margin_2{
+        margin-left: 50px;
+    }
+}
+/* Q4 */
+.container_float{
+    position: relative;
+    left: 50%;
+    display: inline-block;
+}
+.container_float > div{
+    width: 300px;
+    height: 300px;
+    float: left;
+    position: relative;
+    left: -50%;
+}
+.float_1{
+    background: #f00;
+}
+.float_2{
+    background: #0008ff;
+}
+@media screen and (max-width: 960px){
+    .float_2{
+        clear: both;
+    }
+}
+/* Q5 */
+.container_flex{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.red{
+    width:  300px;
+    height: 300px;
+    background: #f00;
+}
+.blue{
+    width:  300px;
+    height: 300px;
+    background: #0008ff;
+}
+.orange{
+    width:  300px;
+    height: 300px;
+    background: #ff8400;
+}
+.text{
+    position: relative;
+    top:  50%;
+    transform: translateY(-50%);
+}
+@media screen and (max-width: 960px){
+    .container_flex{
+        flex-direction: row-reverse;
+    }
+}
+/* Q6 */
+.green{
+    width:  300px;
+    height: 300px;
+    background: #00ff51; 
+    order: 0;
+}
+.yellow{
+    width:  300px;
+    height: 300px;
+    background: #d4ff00;
+    order: 1;
+}
+.pink{
+    width:  300px;
+    height: 300px;
+    background: #ff00e1;
+    order: 2;
+}
+@media screen and (max-width: 960px){
+    .green{
+        order: 2;
+    }
+    .yellow{
+        order: 1;
+    }
+}
+/* Q7 */
+.container{
+    display: flex;
+    justify-content: center;
+}
+.container > div{
+    width: 300px;
+    height: 300px;
+}
+.box1{
+    background-color: #f00;
+}
+.box2{
+    background-color: #0008ff;
+    display: none;
+}
+.box3{
+    background-color: #00ff51;
+}
+@media screen and (max-width: 960px){
+    .box1{
+        display: none;
+    }
+    .box2{
+        display: inline;
+    }
+}
